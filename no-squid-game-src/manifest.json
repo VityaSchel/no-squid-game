@@ -1,0 +1,22 @@
+{
+  "name": "No Squid Game",
+  "description": "Removes all news, videos, articles about Squid Game from your browser!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://youtube.com/*"],
+      "js": ["content-scripts/youtube.js"]
+    },
+    {
+      "matches": ["https://www.reddit.com/*", "https://reddit.com/*"],
+      "js": ["content-scripts/reddit.js"]
+    }
+  ],
+  "icons": {
+    "16": "/icons/16.png",
+    "32": "/icons/32.png",
+    "48": "/icons/48.png",
+    "128": "/icons/128.png"
+  }
+}
